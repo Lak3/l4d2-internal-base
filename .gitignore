@@ -1,0 +1,12 @@
+
+src/.vs/l4d2_base/v16/.suo
+*.db
+*.ipch
+*.obj
+src/Release/vc142.pdb
+*.dll
+*.pdb
+*.log
+*.txt
+*.tlog
+*.exe
