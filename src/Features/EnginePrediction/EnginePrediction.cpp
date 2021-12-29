@@ -34,7 +34,7 @@ void CFeatures_EnginePrediction::Start(C_BasePlayer* pLocal, CUserCmd* cmd)
 
 	if (cmd->weaponselect != 0)
 	{
-		C_BaseCombatWeapon* pWeapon = pLocal->GetActiveWeapon()->As<C_TerrorWeapon*>();
+		C_BaseCombatWeapon* pWeapon = I::ClientEntityList->GetClientEntity(cmd->weaponselect)->As<C_BaseCombatWeapon*>();
 
 		if (pWeapon)
 			pLocal->SelectItem(pWeapon->GetName(), cmd->weaponsubtype);
